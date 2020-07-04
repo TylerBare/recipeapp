@@ -23,6 +23,7 @@ const App = () => {
   const getRecipes = async () => {
     const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`);
     const data = await response.json();
+    console.log(data);
     setRecipes(data.hits);
   };
 
@@ -55,7 +56,7 @@ const App = () => {
       </form>
       <div className="recipes">
       {recipes.map(recipe => (
-          <Recipe key={recipe.recipe.label} title={recipe.recipe.label} calories={Math.round(recipe.recipe.calories, 0)} image={recipe.recipe.image} ingredients = {recipe.recipe.ingredients}/>
+          <Recipe key={recipe.recipe.label} title={recipe.recipe.label} calories={Math.round(recipe.recipe.calories, 0)} image={recipe.recipe.image} ingredients = {recipe.recipe.ingredients} url={recipe.recipe.url} />
       ))}
     </div>
     </div>
