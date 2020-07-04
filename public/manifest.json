@@ -1,6 +1,6 @@
 {
   "short_name": "Recipe Finder",
-  "name": "Recipe Finder PWA",
+  "name": "Recipe Finder",
   "icons": [
       {
           "src": "/images/logo.png",
