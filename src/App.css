@@ -1,38 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Quicksand&display=swap');
+
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
+  background: linear-gradient(to right, #8360c3, #2ebf91); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.search-form {
+  min-height: 10vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.search-bar {
+  width: 50%;
+  border: 0;
+  padding: 10px;
+  outline: none;
+  height: 20px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.search-button {
+  background: transparent;
+  border: 2px dashed white;
+  border-left: none;
+  padding: 10px 20px;
   color: white;
+  font-family: 'Fugaz One', cursive;
+  height: 40px;
+  outline: none;
 }
 
-.App-link {
-  color: #61dafb;
+.search-button:hover {
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-left: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.recipes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.search-bar-1 {
+  width: 65%;
+  height: 80px;
+  outline: none;
+  border: none;
+  margin-top: 300px;
+  font-size: 50px;
+  font-family: 'Quicksand', sans-serif;
+  outline: none;
+}
+
+.search-button-1 {
+  width: 100px;
+  height: 82px;
+  outline: none;
+  border: none;
+  margin-top: 300px;
+  background-color: lightcoral;
+  font-size: 20px;
+  color: white;
+  font-family: 'Fugaz One', cursive;
+  border: 2px dashed white;
+  border-left: none;
+  background: transparent;
+  outline: none;
+}
+
+.search-button-1:hover {
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-left: none;
+}
+
+.main-title {
+  position: relative;
+  font-family: 'Fugaz One', cursive;
+  font-size: 55px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  top: 240px;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
 }
