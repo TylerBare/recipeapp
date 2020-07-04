@@ -35,7 +35,7 @@ const App = () => {
     setQuery(search);
   };
 
-  if(query==''){
+  if(query===''){
     return(
       <div className="App">
         <h1 className="main-title">Recipe Finder</h1>
