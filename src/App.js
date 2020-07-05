@@ -2,8 +2,6 @@ import React,{useEffect, useState} from 'react';
 import Recipe from './Recipe';
 import './App.css';
 
-
-
 const App = () => {
 
   const APP_ID = "6cd4499b";
@@ -14,10 +12,10 @@ const App = () => {
   const [query, setQuery] = useState('')
 
   useEffect(() => {
-    async function fecthData(){
+    async function fetchData(){
       getRecipes();
     }
-    fecthData();
+    fetchData();
   }, [query]);
 
   const getRecipes = async () => {
@@ -39,11 +37,13 @@ const App = () => {
   if(query===''){
     return(
       <div className="App">
-        <h1 className="main-title">Recipe Finder</h1>
-        <form onSubmit={getSearch} className="search-form">
-          <input className="search-bar-1" type="text" value={search} onChange={updateSearch}/>
-          <button className="search-button-1" type="submit">Search</button>
-        </form>
+        <div className="home-screen">
+          <h1 className="main-title">Recipe Finder</h1>
+          <form onSubmit={getSearch} className="search-form">
+            <input className="search-bar-1" type="text" value={search} onChange={updateSearch}/>
+            <button className="search-button-1" type="submit">Search</button>
+          </form>
+        </div>
       </div>
     )
   }
@@ -52,7 +52,9 @@ const App = () => {
     <div className="App">
       <form onSubmit={getSearch} className="search-form">
         <input className="search-bar" type="text" value={search} onChange={updateSearch}/>
-        <button className="search-button" type="submit">Search</button>
+        <div className="form-button">
+          <button className="search-button" type="submit">Search</button>
+        </div>
       </form>
       <div className="recipes">
       {recipes.map(recipe => (

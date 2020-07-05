@@ -64,7 +64,6 @@
   outline: none;
   border: none;
   margin-top: 300px;
-  background-color: lightcoral;
   font-size: 20px;
   color: white;
   font-family: 'Fugaz One', cursive;
@@ -91,4 +90,36 @@
   color: white;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+@media only screen and (max-device-width : 768px) {
+  .main-title{
+    font-size: 45px;
+  }
+
+  form {
+    margin-top: 0px;
+  }
+
+  .search-bar-1 {
+    display: flex;
+    height: 70px;
+    font-size: 35px;
+    width: 200px;
+  }
+
+  .search-button-1{
+    height: 72px;
+  }
+
+  .form-button {
+    display: flex;
+  }
+
+ 
+
+  .home-screen {
+    position: relative;
+    align-items: center;
+  }
 }

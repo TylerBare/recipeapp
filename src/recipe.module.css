@@ -49,3 +49,12 @@
     text-decoration: none;
     color: black;
 }
+
+@media only screen and (max-device-width : 768px) {
+    .recipe{
+        display: flex;
+        min-width: 100vw;
+        width: 100vw;
+        border-radius: 0;
+    }
+}
