@@ -32,6 +32,8 @@
   font-family: 'Fugaz One', cursive;
   height: 40px;
   outline: none;
+  align-items: center;
+  text-align: center;
 }
 
 .search-button:hover {
