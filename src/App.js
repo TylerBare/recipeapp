@@ -41,7 +41,9 @@ const App = () => {
           <h1 className="main-title">Recipe Finder</h1>
           <form onSubmit={getSearch} className="search-form">
             <input className="search-bar-1" type="text" value={search} onChange={updateSearch}/>
-            <button className="search-button-1" type="submit">Search</button>
+            <div className="form-button">
+              <button className="search-button-1" type="submit">Search</button>
+            </div>
           </form>
         </div>
       </div>
@@ -52,9 +54,7 @@ const App = () => {
     <div className="App">
       <form onSubmit={getSearch} className="search-form">
         <input className="search-bar" type="text" value={search} onChange={updateSearch}/>
-        <div className="form-button">
-          <button className="search-button" type="submit">Search</button>
-        </div>
+        <button className="search-button" type="submit">Search</button>
       </form>
       <div className="recipes">
       {recipes.map(recipe => (

@@ -62,7 +62,6 @@
   width: 100px;
   height: 82px;
   outline: none;
-  border: none;
   margin-top: 300px;
   font-size: 20px;
   color: white;
@@ -70,7 +69,6 @@
   border: 2px dashed white;
   border-left: none;
   background: transparent;
-  outline: none;
 }
 
 .search-button-1:hover {
@@ -92,9 +90,14 @@
   padding-right: 10px;
 }
 
-@media only screen and (max-device-width : 768px) {
+@media only screen and (max-device-width : 600px) {
   .main-title{
     font-size: 45px;
+  }
+
+  .home-screen {
+    position: relative;
+    bottom: 50px;
   }
 
   form {
@@ -102,21 +105,24 @@
   }
 
   .search-bar-1 {
-    display: flex;
+    position: relative;
     height: 70px;
     font-size: 35px;
-    width: 200px;
+    margin-top: 200px;
+    width: 300px;
+    left: 50px;
   }
 
-  .search-button-1{
-    height: 72px;
-  }
 
   .form-button {
-    display: flex;
+    position: relative;
+    top: 50px;
+    right: 40vw;
   }
 
- 
+  .search-button-1 {
+    border: 2px dashed white;
+  }
 
   .home-screen {
     position: relative;
