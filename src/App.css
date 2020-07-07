@@ -112,18 +112,23 @@
     font-size: 35px;
     margin-top: 200px;
     width: 300px;
-    left: 50px;
+    left: 70px;
   }
 
 
   .form-button {
+    display: flex;
     position: relative;
+    align-items: center;
+    text-align: center;
     top: 50px;
     right: 40vw;
   }
 
   .search-button-1 {
     border: 2px dashed white;
+    height: 80px;
+    width: 150px;
   }
 
   .home-screen {
