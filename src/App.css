@@ -12,7 +12,18 @@
 }
 
 .App-2 {
-  background: linear-gradient(to right, #3d7eaaa7, #ffe47a8a);
+  background: #616161;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #9bc5c3, #616161);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #9bc5c3, #616161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+
+
+
+
+
+
   /* background-image: url("https://media.istockphoto.com/vectors/vector-fast-food-pattern-fast-food-seamless-background-vector-id941391600?b=1&k=6&m=941391600&s=612x612&w=0&h=IPQzgBn4LjcwxtvzTtnyEeYP36MasrfRT-xmGARRfy4="); */
   height: 100%;
 }
@@ -46,7 +57,7 @@
   padding: 10px;
   outline: none;
   height: 20px;
-  box-shadow: rgb(128, 128, 128) 8px 8px 12px;
+  box-shadow: rgb(41, 41, 41) 8px 8px 12px;
 }
 
 .search-button {
