@@ -38,7 +38,7 @@
 }
 
 .title:hover {
-    letter-spacing: 1px;
+    text-shadow: 3px 2px rgba(52, 52, 52, 0.16);
 }
 
 .ingredient {

@@ -37,9 +37,10 @@ const App = () => {
   if(query===''){
     return(
       <div className="App">
+        <div className="background"></div>
         <div className="home-screen">
           <h1 className="main-title">Recipe Finder</h1>
-          <form onSubmit={getSearch} className="search-form">
+          <form onSubmit={getSearch} className="search-form-1">
             <input className="search-bar-1" type="text" value={search} onChange={updateSearch}/>
             <div className="form-button">
               <button className="search-button-1" type="submit">Search</button>
@@ -51,7 +52,8 @@ const App = () => {
   }
 
   return(
-    <div className="App">
+    <div className="App-2">
+      <div className="gradient"></div>
       <form onSubmit={getSearch} className="search-form">
         <input className="search-bar" type="text" value={search} onChange={updateSearch}/>
         <button className="search-button" type="submit">Search</button>
